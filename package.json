@@ -1,0 +1,14 @@
+{
+  "name": "plugin-market-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "dev:server": "pnpm --filter @app/server dev",
+    "dev:client": "pnpm --filter @app/client dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@app/server",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@plugins/github": "workspace:*",
+    "@plugins/notion": "workspace:*",
+    "@plugins/sdk": "workspace:*",
+    "@plugins/slack": "workspace:*",
+    "hono": "^4.6.3",
+    "@hono/node-server": "^1.13.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2"
+  }
+}
